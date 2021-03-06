@@ -29,9 +29,9 @@
           <%# end %>
           <!--</td>-->
           <%# end %>
-        <div id="favorites_buttons_<%= book.id %>">
+        <td id="favorites_buttons_<%= book.id %>">
         <%= render partial: 'favorites/favorite', locals: { book: book} %>
-        </div>
+        </t>
         <td>コメント数：<%= @book.book_comments.count %></td>
       </tr><%#= link_to " コメント数：#{book.book_comments.count}", book_path(book.id) %>
     <% end %>
